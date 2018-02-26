@@ -1,0 +1,36 @@
+{
+  "name": "yo-chess-company-backend",
+  "version": "1.0.0",
+  "description": "matlu chess app backend",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanarkko/yo-chess-company-backend.git"
+  },
+  "keywords": [
+    "chess"
+  ],
+  "author": "Evan Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanarkko/yo-chess-company-backend/issues"
+  },
+  "homepage": "https://github.com/evanarkko/yo-chess-company-backend#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "http": "0.0.0",
+    "mongoose": "^5.0.7",
+    "save": "^2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
+  }
+}
