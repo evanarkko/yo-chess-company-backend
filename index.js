@@ -5,13 +5,18 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const mongoose = require('mongoose')
 const userRouter = require("./controllers/users_controller")
+const chatRouter = require('./controllers/messages_controller')
+
 
 mongoose.connect("mongodb://lordevan7:yu6uahea@ds245218.mlab.com:45218/yo-chess-db")
 mongoose.Promise = global.Promise
 
+
 app.use(cors())
 app.use(bodyParser.json())
 app.use('/api/users', userRouter)
+app.use('/api/messages', chatRouter)
+app.use(express.static('build'))
 
 const server = http.createServer(app)
 const PORT = process.env.port || 2000
